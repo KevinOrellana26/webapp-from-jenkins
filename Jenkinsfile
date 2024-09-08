@@ -1,5 +1,7 @@
 pipeline {
-    agent agent-1
+    agent {
+        label 'agent-1'
+    }
 
     environment {
         DOCKER_IMAGE = "mi-primer-img" //nombre de la imagen de Docker
